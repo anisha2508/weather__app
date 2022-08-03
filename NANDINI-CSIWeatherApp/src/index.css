@@ -1,0 +1,240 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Francois One', sans-serif;
+  /* font-family: 'Squada One', cursive; */
+}
+
+
+/* heading section */
+.head button{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid rgb(25, 40, 83);
+  box-shadow: 5px 5px rgb(25, 40, 83);
+  background: rgb(146, 175, 164);
+  color: rgb(25, 40, 83);
+  width: 50%;
+  height: 4rem;
+  margin-bottom: 0rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.head button:hover{
+  font-size: 2.1rem;
+  box-shadow: 5px 5px  3px 2px rgb(25, 40, 83);
+  transition: 0.4s ease-in;
+}
+.app .head{
+  display: flex;
+  justify-content: center;
+}
+/* search-section */
+
+.search-box{
+  display: flex;
+  justify-content: center;
+  margin-top:3rem;
+}
+.blackline{
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+.whiteline{
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+.search-bar{
+  width: 40%;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin:1.5rem;
+  margin-top: 0rem;
+  outline: none;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  background: transparent;
+}
+
+/* backgrounds */
+body{
+  background:mediumaquamarine;
+  color: rgb(25, 40, 83);
+}
+.warm{
+  background: linear-gradient(to left,rgb(236, 128, 95),rgb(163, 163, 29));
+}
+.cold{
+  background:mediumaquamarine;
+}
+.blackbg{
+  background-color: rgb(14, 12, 37);
+}
+
+
+/* section-2 */
+.section-2{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.weather-box{
+ font-size: 2rem;
+}
+.temp{
+  font-size:5rem;
+  margin-right: 2.5rem;
+}
+.weather{
+  text-align: center;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px rgb(0, 0, 0);
+}
+.blueborder{
+  border: 2px solid rgb(37, 37, 73);
+  background: linear-gradient(to right,rgb(106, 109, 117),rgb(225, 222, 248),rgb(106, 109, 117))
+}
+.whiteborder{
+  border: 2px solid rgb(255, 255, 255);
+  background: linear-gradient(to right,rgb(44, 26, 37),rgb(80, 21, 70));
+}
+
+.location-box{
+  margin-top:1rem;
+}
+.location{
+  margin-top: 1rem;
+  font-family: 'Squada One', cursive;
+}
+.date{
+  font-size:1rem;
+}
+
+.box1{
+  margin-left: 15rem;
+  display: flex;
+}
+
+.box2{
+  margin-right: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+.speed img{
+  height:5rem;
+}
+.speed{
+  margin: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  font-size: 2rem;
+}
+.humid img{
+  height:5rem;
+}
+.humid{
+  margin: 1rem;
+  margin-top: 2rem;
+  display:flex;
+  font-size: 2rem;
+}
+.date{
+  font-size: 1.5rem;
+}
+
+@media(min-width:100px) and (max-width:1400px){
+  .section-2{
+    display: flex;
+    flex-direction: column;
+  }
+  .box1{
+    display: flex;
+    flex-direction: column;
+    margin-left:0px;
+  }
+  .temp{
+    display: flex;
+    justify-content: center;
+    margin-left: 4rem;
+  }
+  .location{
+    display: flex;
+    justify-content: center;
+    margin-left:0.3rem;
+    font-size:20px;
+  }
+  .weather{
+    display:block;
+    margin:auto;
+    width: 70%;
+  }
+  .date{
+    display: flex;
+    justify-content: center;
+    margin-left:0.3rem;
+    font-size:20px;
+  }
+ .box2{
+    display: flex;
+    justify-content:space-between;
+    margin: 1rem;
+    width:90%;
+    padding: 0rem;
+  }
+  .speed{
+    font-size: 1.5rem;
+    margin-top: -0.3rem;
+  }
+  .speed img{
+    height: 3rem;
+    margin-top: -0.3rem;
+  }
+  .humid img{
+    height: 3rem;
+    margin-top: -0.3rem;
+  }
+  .humid{
+    font-size: 1.5rem;
+    margin-top: -0.3rem;
+  }
+  .images{
+    height: 10rem;
+  }
+  .images img{
+    height: 10rem;
+  }
+  .head button{
+    width:90%;
+  }
+  .search-bar{
+    width: 80%;
+  }
+  .search-box{
+    display:block;
+    margin: auto; 
+    width:90%;
+    padding: 2rem;
+  }
+  .head{
+    display:block;
+    margin: auto;
+    width:90%;
+  }
+}
+@media(min-width:1400px){
+  .images img{
+    height: 17rem;
+  }
+}
+
+
+/* images-section*/
+.images{
+  display: flex;
+  justify-content: center;
+  /* color: linear-gradient(to left,rgb(44, 26, 37),rgb(105, 24, 92)); */
+}
